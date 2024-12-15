@@ -7,3 +7,9 @@ Tôi là **Trương Ái Nga**, một sinh viên tại **HCMC University of Techn
 ## 🎯 Định hướng nghề nghiệp  
 
 Tôi đang trên hành trình trở thành một **Full-stack Developer**, với mục tiêu dài hạn là chinh phục vị trí **DevOps Engineer**. Tôi không ngừng học hỏi và thực hành với các công nghệ mới để tạo ra những ứng dụng đột phá và hữu ích.  
+
+## Demo
+
+Xem bản demo trực tiếp của trang web tại đây:
+
+[Demo Trực Tiếp](https://ainga04.github.io/profile/)
