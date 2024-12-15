@@ -1,0 +1,74 @@
+@import "valiable-1";
+
+// Reset và cấu hình chung
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+// Main Content
+main {
+  padding: 50px 0;
+}
+
+.skills {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: $primary-color;
+    margin-bottom: 30px;
+  }
+
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .skill-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: $border-radius;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: $primary-color;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: $text-color;
+    }
+  }
+}
+
+// Styles for Mobile
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-item {
+    padding: 15px;
+  }
+}

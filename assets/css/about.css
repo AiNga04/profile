@@ -1,0 +1,96 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f7f7f7;
+  color: #3f4c7c;
+  line-height: 1.6;
+}
+
+#header {
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+}
+
+#header h1 {
+  font-size: 2rem;
+}
+
+main {
+  padding: 50px 0;
+}
+
+.about .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+.about .about-text {
+  max-width: 600px;
+  padding: 20px;
+}
+.about .about-text h1 {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+.about .about-text p {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #3f4c7c;
+}
+.about .about-image {
+  max-width: 300px;
+  margin-top: 20px;
+}
+.about .about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .about .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .about-text {
+    text-align: center;
+    padding: 15px;
+  }
+  .about .about-image {
+    max-width: 250px;
+  }
+  #header h1 {
+    font-size: 1.5rem;
+  }
+  .about-text h1 {
+    font-size: 2rem;
+  }
+  .about-text p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1024px) {
+  .about .container {
+    flex-direction: row;
+  }
+  .about .about-text {
+    max-width: 500px;
+  }
+  .about .about-image {
+    max-width: 280px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-text {
+    max-width: 800px;
+  }
+  .about-image {
+    max-width: 350px;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

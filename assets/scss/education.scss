@@ -1,0 +1,104 @@
+// Màu sắc và font
+@import "valiable-1";
+
+// Reset và cấu hình chung
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+// Main Content
+main {
+  padding: 50px 0;
+}
+
+.education {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: $primary-color;
+    margin-bottom: 30px;
+  }
+
+  .education-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .education-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: $border-radius;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .education-year {
+      width: 80px;
+      background-color: $primary-color;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      border-radius: 50%;
+      margin-right: 20px;
+
+      h3 {
+        font-size: 1.8rem;
+      }
+    }
+
+    .education-details {
+      flex: 1;
+
+      h2 {
+        font-size: 1.8rem;
+        color: $primary-color;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1.4rem;
+        color: $text-color;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+// Styles for Mobile
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .education-item {
+    flex-direction: column;
+    text-align: center;
+
+    .education-year {
+      margin-bottom: 15px;
+      width: 60px;
+      font-size: 1.5rem;
+    }
+
+    .education-details {
+      padding: 15px;
+    }
+  }
+}

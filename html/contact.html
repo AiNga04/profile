@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="../icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/contact.css">
+</head>
+
+<body>
+    <!-- <div id="header"></div> -->
+
+    <header>
+        <section class="nav">
+            <nav>
+                <!-- Hamburger menu -->
+                <div class="menu-toggle">
+                    <i class="fa-solid fa-bars" id="menu-toggle"></i>
+                </div>
+
+                <!-- Menu items -->
+                <ul>
+                    <li><a href="../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="../html/about.html"><i class="fa-regular fa-newspaper"></i> About</a></li>
+                    <li><a href="../html/project.html"><i class="fa-solid fa-star"></i> Project</a></li>
+                    <li><a href="../html/education.html"><i class="fa-brands fa-leanpub"></i> Education</a></li>
+                    <li><a href="../html/skills.html"><i class="fa-solid fa-code"></i> Skills</a></li>
+                    <li><a href="../html/contact.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="contact">
+            <div class="container">
+                <h1>Contact Me</h1>
+                <div class="contact-info">
+                    <div class="info">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>Phone: <a href="tel:+84376600545">+84 376 00 545</a></p>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-envelope"></i>
+                        <p>Email: <a href="mailto:ainga01012004@gmail.com">ainga01012004@gmail.com</a></p>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Location: <a href="https://maps.app.goo.gl/LKk9eR9o1LsUBxTz6">Tp. Ho Chi Minh, Vietnam</a>
+                        </p>
+                    </div>
+                </div>
+
+                <h2>Send a Message</h2>
+                <form action="mailto:ainga01012004@gmail.com" method="POST" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="../assets/js/add.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

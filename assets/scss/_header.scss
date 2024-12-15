@@ -1,0 +1,123 @@
+$primary-color: #4facfe;
+$text-color: #fff;
+
+header {
+  margin-bottom: 60px;
+  .nav {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    nav {
+      ul {
+        display: flex;
+        gap: 15px;
+        list-style: none;
+        margin: 0;
+
+        li {
+          position: relative;
+
+          a {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            color: $text-color;
+            font-weight: 600;
+            transition: color 0.3s ease;
+
+            i {
+              margin-right: 8px;
+              font-size: 1.5rem;
+            }
+          }
+
+          &:hover a {
+            text-shadow: 0.8px 0 0 currentColor;
+          }
+
+          &::after {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 1.2rem;
+            height: 0.2rem;
+            border-radius: 1px;
+            background: currentColor;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+          }
+
+          &:hover::after {
+            opacity: 1;
+          }
+        }
+      }
+
+      /* Hamburger menu */
+      .menu-toggle {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+      }
+      i {
+        color: #fff;
+      }
+    }
+  }
+
+  /* Responsive Styles for smaller screens */
+  @media (max-width: 768px) {
+    .nav {
+      padding: 10px 20px;
+      justify-content: space-between;
+
+      nav {
+        /* Show hamburger menu on small screens */
+        .menu-toggle {
+          display: flex;
+        }
+
+        ul {
+          display: none; /* Hide the menu by default on mobile */
+          position: absolute;
+          top: 60px;
+          right: 20px;
+          background-color: $primary-color;
+          padding: 20px;
+          width: 200px;
+          border-radius: 8px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        &.open ul {
+          display: flex; /* Show menu when 'open' class is added */
+        }
+
+        ul li {
+          text-align: center;
+        }
+
+        ul li a {
+          padding: 12px;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f7f7f7;
+  color: #3f4c7c;
+  line-height: 1.6;
+}
+
+main {
+  padding: 50px 0;
+}
+
+.education .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+.education h1 {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+.education .education-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.education .education-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.education .education-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+}
+.education .education-item .education-year {
+  width: 80px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.education .education-item .education-year h3 {
+  font-size: 1.8rem;
+}
+.education .education-item .education-details {
+  flex: 1;
+}
+.education .education-item .education-details h2 {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+.education .education-item .education-details p {
+  font-size: 1.4rem;
+  color: #3f4c7c;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .education-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .education-item .education-year {
+    margin-bottom: 15px;
+    width: 60px;
+    font-size: 1.5rem;
+  }
+  .education-item .education-details {
+    padding: 15px;
+  }
+}
+
+/*# sourceMappingURL=education.css.map */

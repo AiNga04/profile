@@ -1,0 +1,122 @@
+@import "valiable-1";
+
+// Reset và cấu hình chung
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+// Main Content
+main {
+  padding: 50px 0;
+}
+
+.contact {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: $primary-color;
+    margin-bottom: 30px;
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+
+    .info {
+      font-size: 1.4rem;
+      color: $text-color;
+      display: flex;
+      align-items: center;
+
+      i {
+        font-size: 2rem;
+        margin-right: 10px;
+        color: $primary-color;
+      }
+
+      a {
+        color: $primary-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: $primary-color;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .form-group {
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 20px;
+
+      label {
+        font-size: 1.4rem;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 1.4rem;
+        border: 1px solid #ddd;
+        border-radius: $border-radius;
+        margin-top: 5px;
+      }
+
+      textarea {
+        min-height: 100px;
+      }
+    }
+
+    .btn {
+      background-color: $primary-color;
+      color: #fff;
+      font-size: 1.6rem;
+      padding: 10px 20px;
+      border: none;
+      border-radius: $border-radius;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
+
+// Styles for Mobile
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-group {
+    width: 90%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
